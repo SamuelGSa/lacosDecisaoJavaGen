@@ -16,9 +16,12 @@ public class ex002 {
         System.out.println("Informe o terceiro valor: ");
         int n3 = entrada.nextInt();
 
-        int[] arrayNum = {n1,n2,n3};
+        int[] arrayNum = {n1, n2, n3};
         Arrays.sort(arrayNum);
-        System.out.println("Ordem crescente: "+ arrayNum[0] + ", "+ arrayNum[1] + ", " + arrayNum[2]);
+
+        for (int i = 0; i < arrayNum.length; i++) {
+            System.out.println("Ordem crescente: " + arrayNum[i]);
+        }
     }
 
 }
